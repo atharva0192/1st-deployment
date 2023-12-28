@@ -35,6 +35,16 @@ st.sidebar.write(
     "This app uses a deep learning model to predict whether an uploaded blood smear image is normal or infected with malaria."
 )
 
+st.markdown(
+    f'''
+        <style>
+            .sidebar .sidebar-content {{
+                width: 375px;
+            }}
+        </style>
+    ''',
+    unsafe_allow_html=True
+)
 # Main content
 st.title("Malaria Detection App")
 
